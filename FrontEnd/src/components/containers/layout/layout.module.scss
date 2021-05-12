@@ -1,0 +1,6 @@
+@import "../../../styles/index.scss";
+
+.layout {
+  @include container-width;
+  margin-top: 40px;
+}

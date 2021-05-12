@@ -1,0 +1,49 @@
+@import "../../../styles/variables.scss";
+
+.detail {
+  padding: 30px;
+  height: 100%;
+  background-color: $plain-white;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.picture {
+  height: 200px;
+  @media (min-width: 1080px) {
+    height: 800px;
+    width: 800px;
+    object-fit: contain;
+  }
+}
+
+.description {
+  grid-column: 1/2;
+  font-weight: 100;
+  text-align: justify;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin-top: 20px;
+    width: 50%;
+    height: 40px;
+    border-color: $border-color;
+    background-color: $button-color;
+    color: $plain-white;
+    &:hover {
+      border-color: $border-hover;
+      background-color: $hover-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.price {
+  margin: 25px 0px 25px 0px;
+  font-size: 40px;
+  font-weight: 500;
+}

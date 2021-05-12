@@ -1,0 +1,18 @@
+@import "../../../styles/variables.scss";
+
+.detail {
+  padding: 30px;
+  height: 100%;
+  background-color: $plain-white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 30px;
+  height: 300px;
+  width: 300px;
+}
